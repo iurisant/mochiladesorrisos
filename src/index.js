@@ -9,6 +9,7 @@ import { AuthContext } from "./context/AuthContext";
 import { Protected } from './context/Protected';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css'
+import { Public } from './context/Public';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -27,7 +28,7 @@ root.render(
       />
       <Routes>
         <Route index element={<App />} />
-        <Route path="login" element={< Login />} />
+        <Route path="login" element={<Public>< Login /></Public>} />
         <Route path="admin" element={<Protected>< Dashboard /></Protected>} />
         <Route path="*" element={<h1 className=' text-4xl p-6 font-sans'>Erro 404 -  Página não encontrada</h1>} />
       </Routes>

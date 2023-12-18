@@ -1,38 +1,112 @@
-.App {
-  text-align: center;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Epilogue&family=Inter&display=swap');
+
+p,
+strong {
+  font-family: 'Inter', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1,
+h2 {
+  font-family: 'Epilogue', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (min-width: 768px) {
+  .badges div:nth-child(3) {
+    grid-column-start: span 2;
+    grid-column-end: span 2;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@media (min-width: 1024px) {
+  .badges div:nth-child(3) {
+    grid-column-start: span 1;
+    grid-column-end: span 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .book-reverse div:nth-child(2n) {
+    flex-direction: row-reverse;
+  }
+}
+
+body::-webkit-scrollbar {
+  width: 14px;
+  /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: white;
+  /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #c2c2c2;
+  /* color of the scroll thumb */
+  border-radius: 20px;
+  /* roundness of the scroll thumb */
+  border: 3px solid white;
+  /* creates padding around scroll thumb */
+}
+
+.card {
+  overflow: visible;
+  width: 256px;
+  height: 330px;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 800ms;
+  border-radius: 8px;
+}
+
+.front,
+.back {
+  background-color: white;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.back {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  overflow: hidden;
+}
+
+.card:hover .content {
+  transform: rotateY(180deg);
+}
+
+.front {
+  transform: rotateY(180deg);
   color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.front .front-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }

@@ -93,7 +93,7 @@ export default function DashboardCarousel({ data }) {
               >
                 {({ errors, touched }) => (
                   <Form className='flex flex-col'>
-                    <label htmlFor="url">Link da Imagem:</label>
+                    <label htmlFor="url"><strong>Link da Imagem: <strong className='text-red-600'>Recomendação(1920x512px)</strong></strong></label>
                     <Field id="url" name="url" placeholder="https://i.imgur.com/" className='border-[1px] p-2 border-zinc-400 rounded' />
                     {errors.url && touched.url ? (
                       <div className='text-red-500 text-xs font-bold'>{errors.url}</div>
@@ -125,7 +125,7 @@ export default function DashboardCarousel({ data }) {
               >
                 {({ errors, touched }) => (
                   <Form className='flex flex-col'>
-                    <label htmlFor="url">Link da Imagem:</label>
+                    <label htmlFor="url"><strong>Link da Imagem: <strong className='text-red-600'>Recomendação(1920x512px)</strong></strong></label>
                     <Field id="url" name="url" placeholder="https://i.imgur.com/" className='border-[1px] p-2 border-zinc-400 rounded' />
                     {errors.url && touched.url ? (
                       <div className='text-red-500 text-xs font-bold'>{errors.url}</div>

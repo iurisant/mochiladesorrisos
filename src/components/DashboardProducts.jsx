@@ -115,17 +115,17 @@ export default function DashboardProducts({ data }) {
             >
               {({ errors, touched }) => (
                 <Form className='flex flex-col'>
-                  <label htmlFor="name">Nome do produto:</label>
+                  <label htmlFor="name"><strong>Nome do livro:</strong></label>
                   <Field id="name" name="name" placeholder="Livro 00" className='border-[1px] p-2 border-zinc-400 rounded' />
                   {errors.name && touched.name ? (
                     <div className='text-red-500 text-xs font-bold'>{errors.name}</div>
                   ) : null}
-                  <label htmlFor="description">Descrição do produto:</label>
+                  <label className='mt-4' htmlFor="description"><strong>Descrição do livro:</strong></label>
                   <Field id="description" name="description" placeholder="Descrição" className='border-[1px] p-2 border-zinc-400 rounded' />
                   {errors.description && touched.description ? (
                     <div className='text-red-500 text-xs font-bold'>{errors.description}</div>
                   ) : null}
-                  <label htmlFor="url">Link da Imagem:</label>
+                  <label className='mt-4' htmlFor="url"><strong>Link da Imagem: <strong className='text-red-600'>Recomendação(512x512px)</strong></strong></label>
                   <Field id="url" name="url" placeholder="https://i.imgur.com/" className='border-[1px] p-2 border-zinc-400 rounded' />
                   {errors.url && touched.url ? (
                     <div className='text-red-500 text-xs font-bold'>{errors.url}</div>
@@ -157,17 +157,17 @@ export default function DashboardProducts({ data }) {
             >
               {({ errors, touched }) => (
                 <Form className='flex flex-col'>
-                  <label htmlFor="name">Nome do livro:</label>
+                  <label htmlFor="name"><strong>Nome do livro:</strong></label>
                   <Field id="name" name="name" placeholder="Livro 00" className='border-[1px] p-2 border-zinc-400 rounded' />
                   {errors.name && touched.name ? (
                     <div className='text-red-500 text-xs font-bold'>{errors.name}</div>
                   ) : null}
-                  <label htmlFor="description">Descrição do livro:</label>
+                  <label className='mt-4' htmlFor="description"><strong>Descrição do livro:</strong></label>
                   <Field id="description" name="description" placeholder="Descrição" className='border-[1px] p-2 border-zinc-400 rounded' />
                   {errors.description && touched.description ? (
                     <div className='text-red-500 text-xs font-bold'>{errors.description}</div>
                   ) : null}
-                  <label htmlFor="url">Link da Imagem:</label>
+                  <label className='mt-4' htmlFor="url"><strong>Link da Imagem: <strong className='text-red-600'>Recomendação(512x512px)</strong></strong></label>
                   <Field id="url" name="url" placeholder="https://i.imgur.com/" className='border-[1px] p-2 border-zinc-400 rounded' />
                   {errors.url && touched.url ? (
                     <div className='text-red-500 text-xs font-bold'>{errors.url}</div>

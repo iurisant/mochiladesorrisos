@@ -1,5 +1,6 @@
 import React from "react";
 import { getAuth, onAuthStateChanged } from 'firebase/auth'
+import ModalLoading from '../components/ModalLoading';
 
 export const Context = React.createContext();
 
@@ -26,8 +27,10 @@ export function AuthContext({ children }) {
   }
 
   return <Context.Provider value={values}>
-    {!loading &&
+    {!loading ? (
       children
-    }
+    ) : (
+      <ModalLoading />
+    )}
   </Context.Provider>
 }

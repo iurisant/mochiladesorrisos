@@ -11,8 +11,8 @@ export default function TopBar() {
         <a href='/#' className='flex items-center gap-4'>
           <img src={Logo} alt="" width={48} height={48} />
           <div >
-            <h1 className='text-xs'>Editora & Gráfica</h1>
-            <h1 className=' text-sm font-semibold'>Mochila de Sorrisos</h1>
+            <h1 className='text-xs line-clamp-1'>Editora & Gráfica</h1>
+            <h1 className=' text-sm font-semibold line-clamp-1'>Mochila de Sorrisos</h1>
           </div>
         </a>
         <ul className="flex gap-4 max-md:hidden">

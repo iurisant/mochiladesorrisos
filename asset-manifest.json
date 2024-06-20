@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f8159a7c.css",
+    "main.js": "/static/js/main.b943deec.js",
+    "static/js/787.a2553d79.chunk.js": "/static/js/787.a2553d79.chunk.js",
+    "static/media/livros.png": "/static/media/livros.5a2084cd020b9717364e.png",
+    "static/media/logo.svg": "/static/media/logo.8998884d915348e850c5ef892c8b6609.svg",
+    "static/media/img02.svg": "/static/media/img02.1d421e5a919ddf71a1405100a6ccd98e.svg",
+    "static/media/img01.svg": "/static/media/img01.171daa7f28fe220f07d0c6ea6dfcaad7.svg",
+    "static/media/valores.svg": "/static/media/valores.5e2c6f1b7225e57e55293a8b70434d92.svg",
+    "static/media/visao.svg": "/static/media/visao.18e7634bbebb7a27634b8ff6fe200e4c.svg",
+    "static/media/missao.svg": "/static/media/missao.4f5cc5f881b7f8eb8bfd59eb1e5df181.svg",
+    "static/media/whatsapp.svg": "/static/media/whatsapp.6181e5cecd1a682846ba3e623621a869.svg",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/instagram.svg": "/static/media/instagram.a47c91cdd051f4cacc3e197a48b75a6d.svg",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/index.html",
+    "main.f8159a7c.css.map": "/static/css/main.f8159a7c.css.map",
+    "main.b943deec.js.map": "/static/js/main.b943deec.js.map",
+    "787.a2553d79.chunk.js.map": "/static/js/787.a2553d79.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f8159a7c.css",
+    "static/js/main.b943deec.js"
+  ]
+}
